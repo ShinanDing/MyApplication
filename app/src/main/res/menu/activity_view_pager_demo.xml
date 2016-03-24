@@ -1,0 +1,5 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/menu_settings"
+        android:title="@string/title_activity_view_pager_demo"
+        android:orderInCategory="100" />
+</menu>

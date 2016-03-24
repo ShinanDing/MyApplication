@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">天气预报</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_select_city">SelectCity</string>
+    <string name="title_activity_find_city">findCity</string>
+    <string name="title_activity_view_pager_demo">ViewPagerDemo</string>
+</resources>

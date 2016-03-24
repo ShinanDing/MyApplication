@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.issuser.myapplication.SelectCity"
+    tools:showIn="@layout/activity_select_city"
+    android:background="@drawable/app_bg">
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipe"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <GridView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/gridView"
+        android:numColumns="4"
+        android:horizontalSpacing="6dp"
+        android:verticalSpacing="6dp"
+        />
+    </android.support.v4.widget.SwipeRefreshLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:background="#058381">
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/imageView8"
+            android:src="@drawable/back"
+            android:layout_alignParentLeft="true"
+            android:layout_gravity="bottom" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="选择城市"
+            android:id="@+id/textView2"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/editor"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:background="@drawable/refresh" />
+    </LinearLayout>
+</RelativeLayout>

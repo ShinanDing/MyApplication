@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:fillViewport="false"
+            android:background="@drawable/app_bg">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/pic"
+                    android:background="@drawable/qing">
+
+                    <LinearLayout
+                        android:id="@+id/line1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:layout_marginTop="10dp">
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:id="@+id/cityTv"
+                            android:textColor="#FFFFFF"
+                            android:text="广州"
+                            android:textSize="25dp" />
+
+                        <TextView
+                            android:id="@+id/temperatureTv"
+                            android:layout_width="fill_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:textSize="80dp"
+                            android:textColor="#FFFFFF"
+                            android:layout_marginTop="5dp" />
+
+                        <TextView
+                            android:id="@+id/dateTv"
+                            android:layout_width="fill_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:textSize="20dp"
+                            android:textColor="#FFFFFF"
+                            android:layout_marginTop="5dp" />
+
+                        <TextView
+                            android:id="@+id/weatherTv"
+                            android:layout_width="fill_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:textSize="20dp"
+                            android:textColor="#ffffff"
+                            android:layout_marginTop="5dp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="5dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="未来一周天气情况"
+                        android:textSize="15dp"
+                        android:textColor="#a3b0b0" />
+                </LinearLayout>
+
+                <TableLayout
+                    android:id="@+id/background"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="3dp">
+
+                        <TextView
+                            android:id="@+id/day1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:layout_weight="1"
+                            android:text="昨天"
+                            android:textSize="15dp"
+                            android:textColor="#000000"
+                            />
+
+                        <TextView
+                            android:id="@+id/day2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:layout_weight="1"
+                            android:text="今天"
+                            android:textSize="15dp"
+                            android:textColor="#000000" />
+
+                        <TextView
+                            android:id="@+id/day3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:layout_weight="1"
+                            android:textSize="15dp"
+                            android:textColor="#000000"
+                            android:text="明天" />
+
+                        <TextView
+                            android:id="@+id/day4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:layout_weight="1"
+                            android:textSize="15dp"
+                            android:textColor="#000000" />
+
+                        <TextView
+                            android:id="@+id/day5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:layout_weight="1"
+                            android:textSize="15dp"
+                            android:textColor="#000000" />
+
+                        <TextView
+                            android:id="@+id/day6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:layout_weight="1"
+                            android:textSize="15dp"
+                            android:textColor="#000000" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="8dp"
+                        android:layout_gravity="center">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/imageView3"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:scaleX="0.6"
+                            android:scaleY="1.0"
+                            />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/imageView4"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:scaleX="0.6"
+                            android:scaleY="1.0"
+                            />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/imageView5"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:scaleX="0.6"
+                            android:scaleY="1.0"
+                            />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/imageView6"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:scaleX="0.6"
+                            android:scaleY="1.0"
+                            />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/imageView7"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:scaleX="0.6"
+                            android:scaleY="1.0"
+                            />
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/imageView8"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:scaleX="0.6"
+                            android:scaleY="1.0"
+                            />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="8dp">
+
+                        <TextView
+                            android:id="@+id/weather1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:layout_weight="1"
+                            android:textSize="15dp"
+                            android:textColor="#000000" />
+
+                        <TextView
+                            android:id="@+id/weather2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:layout_weight="1"
+                            android:textSize="15dp"
+                            android:textColor="#000000" />
+
+                        <TextView
+                            android:id="@+id/weather3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:layout_weight="1"
+                            android:textSize="15dp"
+                            android:textColor="#000000" />
+
+                        <TextView
+                            android:id="@+id/weather4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:layout_weight="1"
+                            android:textSize="15dp"
+                            android:textColor="#000000" />
+
+                        <TextView
+                            android:id="@+id/weather5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:layout_weight="1"
+                            android:textSize="15dp"
+                            android:textColor="#000000" />
+                        <TextView
+                            android:id="@+id/weather6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:layout_weight="1"
+                            android:textSize="15dp"
+                            android:textColor="#000000" />
+                    </TableRow>
+
+                </TableLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="240dp"
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/chartView">
+
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+</LinearLayout>
